@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -34,7 +36,7 @@
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        gap: 1.5rem;
+        gap: 0.6rem;
         
     }
 
@@ -52,10 +54,24 @@
         display: flex;
         
         
+        
     }
 
     .grid-images-inner{
         max-width: 90%;
+        position: relative;
+        
+    }
+
+    #first-icon {
+        top: -165px;
+        left: 155.4px;
+        
+    }
+
+    #first-icon .num-icon{
+        border: 1px solid #d1d1df;
+        background-color: white;
     }
 
     
@@ -64,6 +80,7 @@
         grid-template-columns: 1fr 1fr;
         max-width: 100%;
         gap: 1rem;
+        margin: 2rem 0;
     }
 
     .images div{
@@ -79,17 +96,15 @@
         background-color: rgba(128, 128, 128, 0.096);
     }
 
-    .img-box{
-        width: 450px;
-    }
+   
 
-    .inner-box__people{
-        max-width: 100%;
-    }
+   
 
     .third-grid-images{
         display: flex;
         justify-content: center;
+
+        gap: 2rem !important;
     }
 
     .inner-box{
@@ -97,8 +112,21 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        gap: 1.8rem;
+        gap: 0.9rem;
         
+    }
+
+    .group_header{
+        color: #28283d !important;
+        font-size: 36px;
+        width: 16ch;
+        line-height: 110%;
+        text-align: center;
+        padding: 0.5rem 2.2rem;
+    }
+
+    .inner-box__people{
+        width: 115vw;
     }
 
     .foot-cont{
@@ -121,6 +149,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         max-width: 100%;
+        margin-top: 5rem;
         
         
         
@@ -132,7 +161,167 @@
 
     .group-chat-para{
         text-align: center;
+        color: #87879d;
+        font-family: "Red Hat Display", serif;
+        width: 28ch;
     }
+
+    .btn-download{
+        background-color: #4d96a9;
+        box-shadow: 0 0 #979797;
+        border: 0;
+        padding: 1.2rem 2.2rem;
+        color: white;
+        border-radius: 32px;
+        margin-top: 2rem;
+    }
+
+    .btn-purple{
+        background-color: #855fb1;
+        box-shadow: 0 0 #979797;
+        border: 0;
+        padding: 1.2rem 2.4rem;
+        color: white;
+        border-radius: 32px;
+    }
+
+    .down-num{
+        color: #8fe3f9;
+
+    }
+
+    .third-grid-images{
+        display: flex;
+        justify-content: center;
+
+        flex-flow: column nowrap;
+        align-items: center;
+       
+        
+    }
+
+    .footer-img-text h3{
+        color: #4d96a9;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 4px;
+        line-height: 110%;
+        font-size: 1rem;
+    }
+
+    .footer-img-text p{
+        color: #87979d;
+        font-family: "Red Hat Display", serif;
+        width: 28ch;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+
+    }
+
+    .footer-img-text h2{
+        color: #28283d;
+        
+        text-align: center;
+        margin-top: 1.2rem;
+    
+        line-height: 110%;
+        font-family: "Red Hat Display", serif;
+        font-weight: 900;
+        width: 15ch;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 1.1rem;
+    }
+
+    .footer-img-text{
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .foot-head{
+        color: #fff;
+        font-family: "Red Hat Display", serif;
+        line-height: 110%;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 50px;
+        z-index: 1;
+    }
+    .foot-para{
+        color: #fff;
+        width: 34ch;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        z-index: 1;
+    }
+
+    .foot-btn{
+        background-color: #855fb1;
+        box-shadow: 0 0 #979797;
+        border: 0;
+        padding: 1.2rem 2.5rem;
+        color: white;
+        border-radius: 32px;
+        margin-bottom: 65px;
+        z-index: 3;
+    }
+
+    .test-footer{
+        position: relative;
+    }
+    .bg-gradient{
+        height: 352.89px;
+        background-color: #4d97a9c2;
+        width: 100%;
+        position: absolute;
+        z-index: 0;
+    }
+
+    .num-icon{
+        z-index: 2;
+        color: #87879d;
+        width: 50px;
+        height: 50px;
+        background-color: #fafafa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+    }
+
+   .left, .right{
+    
+    color: white;
+    width: 30px;
+    height: 100px;
+   }
+
+   .right{
+    border-left: 1px solid #d1d1df;
+   }
+
+   .first-half{
+    display: flex;
+    flex-flow: row nowrap
+   }
+
+   .num-icon-cont{
+    position: absolute;
+    top: -120px;
+   
+   }
+
+   .grid-images-inner{
+    margin-top: 200px;
+   }
     
   }
   
